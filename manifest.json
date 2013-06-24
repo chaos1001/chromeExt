@@ -1,0 +1,18 @@
+﻿{
+	"name": "o0o0o",
+	"version": "1.0",
+	"permissions": [
+		"cookies",
+		"tabs",
+		"notifications",
+		"http://*/*"
+	],
+	"browser_action": {
+		"default_icon": "kuroko1.png",
+		"default_popup": "popup.html",
+		"default_title": "so this will show in tool tip? where"
+	},
+	"background": { "scripts": ["background.js"] },
+	"web_accessible_resources": ["kuroko.png","kuroko1.png"],
+	"manifest_version": 2
+}
