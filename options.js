@@ -20,8 +20,20 @@ function restore_options() {
   var hour = document.getElementById("hour");
   var minute = document.getElementById("minute");
 
-	hour.value = localStorage["hour"];
-  minute.value = localStorage["minute"];
+	
+	if(!localStorage["hour"]){
+		hour.value ='';
+	}
+	else{
+		hour.value = localStorage["hour"];
+	}
+	
+	if(!localStorage["minute"]){
+		minute.value ='';
+	}
+	else{
+		minute.value = localStorage["minute"];
+	}
   
 }
 
