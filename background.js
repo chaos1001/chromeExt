@@ -7,7 +7,7 @@ function show() {
   var time = /(..)(:..)/.exec(new Date());     // The prettyprinted time.
   var hour = time[1];               // The prettyprinted hour.
   var minute = time[2]; // The period of the day.
-  var notification = window.webkitNotifications.createNotification('kuroko.png','啊！！','是不是还有今天结束的task没有点掉..');
+  var notification = window.webkitNotifications.createNotification('kuroko.png','啊！！','上线了上线了上线了');
   notification.show();
   
   notification.addEventListener('click',function(){
